@@ -1,0 +1,422 @@
+body {
+  color:rgb(85, 83, 83);
+  margin: 0;
+ font-family: 'Mali', cursive;
+ font-weight:600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#f5f8ea;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.title{
+  align-items: center;
+  width:40rem;
+  margin-left:25%;
+  padding-top:3%;
+
+}
+.container{
+  /* display:inline-flex; */
+width: 100%;
+height:100%;
+margin-left: 0%;
+margin-top: 0%
+}
+
+
+.appContainer{
+  width:100%;
+  height:8rem;
+  background-color:#f5f8ea;
+}
+.section{
+  margin-left: 9%;
+  width: 80%;
+
+}
+.sidebarContainer{
+  height: 100%;
+}
+.sidebar{
+  border: 0.1rem solid rgb(236, 229, 229);
+  position:fixed;
+  transform: scaleX(-0%);
+  margin-left:-23rem;
+  margin-top:-rem;
+  transition:all 0.5s linear;
+  background-color:white;
+  width:30%;
+  height:100%;
+  /* display:none */
+}
+.sidebar .sidebarButtons button{
+  margin-top:-13rem;
+}
+.sidebarDisplay{
+  position: fixed;
+  /* margin-left:0rem; */
+  transform: scaleX(100%);
+  transition:all 1s linear;
+  margin-top:-rem; 
+  background-color: #e5edee;
+  width:20%;
+  height:100%;
+  /* border: 0.1rem solid black; */
+}
+.sidebarDisplay:hover{
+  color:#fff
+}
+/* .sidebarDisplay ul{
+
+  margin-top: 8rem;
+  list-style: none;
+}
+.sidebarDisplay ul li{
+  transition: all 0.7s linear;
+  width: 9rem;
+  height: 1.3rem;
+  align-items:center;
+  padding-left:2rem;
+  padding-top:0.2rem;
+  cursor: pointer;
+
+} */
+.sidebarButtons{
+  margin-top:40%;
+  margin-left:20%;
+
+  /* transition:all 2s linear;
+  transition-delay:4s; */
+
+}
+.sidebarList{
+  position: relative;
+  display:flex;
+  background-color:#e8f0e0;
+  border: 1px solid rgb(148, 141, 70);
+  border-radius: 0.3rem;
+  height:2.1rem;
+  text-align: center;
+  /* line-height: 0.5rem; */
+  width:7rem;
+  font-size: 0.8rem;
+  padding-top:0.5rem;
+  padding-left:12%;
+  margin-top:1rem;
+  margin-left:0rem;
+  color: rgb(16, 17, 17);
+  transition: all 1s linear;
+  transition-delay:0.1s;
+  z-index: 1;
+}
+.sidebarList:after{
+position: absolute;
+width:0%;
+height:100%;
+left: 0;
+top:0;
+z-index: 0;
+content:'' ;
+transition: all 0.3s linear;
+border-radius: 0.3rem;
+z-index: -1;
+background-color:rgb(142, 207, 216);
+color: white;
+
+}
+.sidebarList:hover::after{
+  width:100%;
+  left:0%;
+  top:0;
+
+}
+.sidebarList:hover{
+  color:#fff;
+  font-weight:bolder;
+  font-size:1rem;
+  padding-left:1rem;
+
+  cursor: pointer;
+
+}
+
+.sidebarListAfter{
+  position: relative;
+  display:flex;
+  background-color:rgb(142, 207, 216);
+  color: white;
+  font-weight:bolder;
+  font-size:1rem;
+  padding-left:1rem;
+
+  cursor: pointer;
+  border: 1px solid rgb(148, 141, 70);
+  border-radius: 0.3rem;
+  height:2.1rem;
+  text-align: center;
+  /* line-height: 0.5rem; */
+  width:7rem;
+  padding-top:0.5rem;
+ 
+  transition: all 1s linear;
+  transition-delay:0.1s;
+  z-index: 1;
+  
+  }
+
+
+.hideList{
+  margin-left: 5rem;
+  transition: all 0.3s linear;
+  color:#fff
+
+}
+.hideList:hover{
+  color:#fff
+}
+.welcome{
+  position:relative;
+  top:5rem;
+  left:5rem; 
+  margin-left: 10%;
+  height:25rem;
+  width: 80%;
+  font-weight: bold;
+  font-size: 1rem;
+  z-index: -1;
+}
+.section{
+
+  width:60%
+}
+.welcomeTitle{
+  position:relative;
+  font-size: 1.5rem;
+  margin-left:25%;
+}
+.welcome-div{
+  position:relative;
+  width:33rem;
+  height:5rem;
+  margin-left:2rem;
+
+  transition: all 0.8s ease;
+  display: inline-block;
+}
+
+/* 
+.welcomeIntroductionSecond{
+
+  border: none;
+  color: #000;
+
+
+  
+}
+.welcomeIntroductionSecond:hover{
+  cursor: pointer;
+}
+.welcomeIntroductionSecond:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.welcomeIntroductionSecond:hover:after{
+  left: auto;
+  right: 0;
+} */ */
+
+
+.welcomeIntroduction {
+  
+
+  border: 1rem solid black;
+  /* font-size:3rem;
+  font-weight:bolder; */
+  overflow: hidden;
+  width:10rem;
+  text-align:justify;
+  color: #000;
+  background-color:rgb(37, 81, 223);
+  z-index: 0;
+  
+}
+/* .welcomeIntroduction:after {
+ background-color: tomato;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+
+  transition: all 0.3s ease;
+}
+.welcomeIntroduction:before {
+  background-color: rgb(133, 201, 233);
+  position: relative;
+
+   content: "";
+   width: 0%;
+   height: 100%;
+  color:#fff;
+  top: 0;
+  left: 0;
+   z-index: -1;
+ 
+   transition: all 0.3s ease;
+ }
+.welcomeIntroduction:hover::after {
+   width: 100%;
+   left: 0;
+   top:0;
+
+}
+.welcomeIntroduction:hover{
+  color:#fff
+} */
+.welcomeDiv{
+  margin:2rem;
+}
+.scroll{
+  position:absolute;
+  height: 10rem;
+  margin-top: -23%;
+  margin-left:68%;
+  width: 25%;
+  background-color:rgb(190, 236, 217);
+  z-index: -5 !important;
+}
+.advantage{
+  margin-left:4%;
+  z-index: -1;
+}
+.curouselContainer{
+  width: 62rem;
+  height:5rem;
+  margin-left:30%;
+  display:inline-flex;
+  margin-top:10rem;
+  z-index: -2;
+
+}
+
+.welcomeCardsContainer{
+  margin-left:-0rem;
+  margin-top:1rem;
+  height:34rem;
+  width: 190rem;
+  margin-left:-8rem;
+  overflow: hidden;
+}
+.welcome-container{
+width:175rem;
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+grid-gap: 0px; 
+overflow:visible;
+transition: all 0.5s linear
+
+}
+.welcomeCard{
+
+  width: 15rem !important  ;
+  height: 15rem;
+  border-radius:0.5rem ;
+  cursor: pointer;
+  margin-left:2rem;
+  background-color: rgba(251, 255, 226, 0.808);
+  z-index: 2;
+}
+
+.curouselLeftBtn, .curouselRightBtn{
+  border:none;
+  font-size: 2rem;
+  background-color: transparent;
+  color:#dbe0c9e1;
+  cursor: pointer;
+  z-index: 3;
+}
+.curouselLeftBtn{
+  position: absolute;
+  margin-left:18rem;
+  margin-top:17rem;
+  }
+  .curouselRightBtn{
+    margin-top:7rem;
+    margin-right:8rem;
+  }
+.menuIcon{
+  position:fixed;
+  top:8%;
+  left:13%;
+  font-size: 2rem;
+  transform: rotate(0deg);
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: all 0.3s linear; 
+  margin-left:3rem;
+  color:rgb(133, 126, 126)
+}
+.menuIcon:hover{
+  transform: rotate(90deg)
+}
+.menuIconHovered{
+transform: rotate(90deg);
+transition: all 0.3s linear; 
+font-size: 0;
+cursor: pointer;
+
+}
+.closeBtn{
+  position:fixed;
+  font-size:1.5rem;
+  margin-left: 15rem;
+  margin-top:5rem;
+
+  color:rgb(133, 126, 126);
+  cursor: pointer;
+}
+.hideSidebar{
+  transition:all 0.3s  linear
+}
+.advantage{
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  width: 80%
+}
+ul{
+  list-style: none;
+}
+.lastDiv{
+  height: 40rem;
+  background-color: rgb(142, 207, 216);
+  z-index: -1;
+
+}
+.myImgDiv{
+  width: 15%;
+  position:absolute;
+  top: 10%;
+  left: 50%;
+}
+.myImg{
+width: 24rem;
+height: 34rem;
+}
