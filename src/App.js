@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react'
 import { useGlobalContext } from './context';
-import myImg from '../src/Basheer.png'
 import './index.css';
 
 import Sidebar from './Sidebar';
